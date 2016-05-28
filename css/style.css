@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+}
+.wrap {
+  font-size: 0;
+  position: relative;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 100%;
+  background-color: #222;
+}
+.options {
+  display: block;
+  position: absolute;
+  left: 15vw;
+  top: 15vw;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  border: 1vw solid #222;
+  box-sizing: border-box;
+  background-color: #ccc;
+  text-align: center;
+}
+.brand {
+  margin-top: 3vw;
+  font-size: 3vw;
+}
+.button  {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1vw;
+  height: 2vw;
+  padding: 0.1vw;
+  line-height: 2vw;
+  min-width: 3vw; 
+  margin: 1vw 0.5vw 0 0;
+  border-radius: 10%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+#start {
+  background-color: green;
+}
+#reset {
+  background-color: orange;
+}
+#strict_display {
+  display: inline-block;
+  border-radius: 30%;
+  width: 2vw;
+  padding-left: .5vw;
+  padding-right: .5vw;
+  font-family: monospace;
+}
+.strict_on {
+  background-color: red;
+}
+.strict_off {
+  background-color: blue;
+}
+.info {
+  position: absolute;
+  width: 100%;
+  background-color: #444;
+  color: white;
+  text-align:center;
+  font-size: 1.2vw;
+  height: 1.4vw;
+  line-height: 1.2vw;
+}
+#count {
+  color: white;
+  font-family: monospace;
+  margin-right: 1vw;
+  text-align: right;
+  margin-top: 1.8vw;
+  font-size: 2vw;
+}
+.screen {
+  display: block;
+  position: relative;
+  background-color: black;
+  height: 4vw;
+  margin: 1vw auto;
+  border-radius: 10%;
+  border: .5vw solid #444;
+  width: 7vw;
+}
+
+.play {
+  display: inline-block;
+  width: 21vw;
+  height: 21vw;
+}
+#top_left {
+  border-top-left-radius: 100%;
+  margin-left: 3vw;
+  background-color: rgb(0,160,0);
+}
+#top_right {
+  border-top-right-radius: 100%;
+  margin-left: 2vw;
+  margin-top: 3vw;
+  background-color: rgb(160,0,0);
+}
+#bottom_left {
+  border-bottom-left-radius: 100%;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  background-color: rgb(150,150,0);
+}
+#bottom_right {
+  border-bottom-right-radius: 100%;
+  margin-left: 2vw;
+  margin-top: 2vw;
+  background-color: rgb(0,0,180);
+}
+/*These use !important becuase flashing is styled with a class but the elements are styled with IDs: */
+.top_left_flash {
+  background-color: rgb(0,255,0) !important;
+}
+.top_right_flash {
+  background-color: rgb(255,50,50) !important;
+}
+.bottom_left_flash {
+  background-color: rgb(255,255,25) !important;
+}
+.bottom_right_flash {
+  background-color: rgb(25,25,255) !important;
+}

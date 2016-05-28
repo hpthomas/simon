@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon with Promises</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class='wrap'>
+  <div class='options'>
+    <div class='brand' > Simon! </div>
+    <div class='button' id='start'>Start
+    </div>
+    <div class='button' id='reset'>Reset
+    </div>
+    <div class='button' id='toggle_strict'>Strict Mode: <span id='strict_display'class='strict_on'> On</span>
+    </div>
+    <div class='screen'>
+      <div class='info'>Count:</div>
+      <div id='count'>0</div>
+    </div>
+  </div>
+  <div class='play'id='top_left'>
+  </div>
+  <div class='play'id='top_right'>
+  </div>
+  <div class='play'id='bottom_left'>
+  </div>
+  <div class='play' id='bottom_right'>
+  </div>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" controls id='s1' style='display:none'></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" controls id='s2' style='display:none'></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" controls id='s3' style='display:none'></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" controls id='s4' style='display:none'></audio>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
